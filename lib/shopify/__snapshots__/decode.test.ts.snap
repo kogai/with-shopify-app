@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/shopify/decode decodeIndexQuery ng 1`] = `
+Object {
+  "err": [Error: Invalid access. shop=undefined],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/decode decodeIndexQuery ng(bound property) 1`] = `
+Object {
+  "err": [Error: Invalid access. shop=mytest1.myshopify.com,mytest2.myshopify.com],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/decode decodeIndexQuery ok(post) 1`] = `
+Object {
+  "err": undefined,
+  "ok": true,
+  "val": Object {
+    "accessToken": "abc",
+    "shop": "mytest.myshopify.com",
+    "storeFrontAccessToken": "def",
+    "type": "post",
+  },
+}
+`;
+
+exports[`lib/shopify/decode decodeIndexQuery ok(pre) 1`] = `
+Object {
+  "err": undefined,
+  "ok": true,
+  "val": Object {
+    "shop": "mytest.myshopify.com",
+    "type": "pre",
+  },
+}
+`;
+
+exports[`lib/shopify/decode decodeVerifyPayload ng(bound property) 1`] = `
+Object {
+  "err": [Error: invalid property, hmac=abc&code=ABC&code=DEF&shop=ghi&state=jkl&timestamp=mno&a=pqr],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/decode decodeVerifyPayload ng(free property) 1`] = `
+Object {
+  "err": [Error: invalid property, hmac=abc&code=def&shop=ghi&state=jkl&timestamp=mno&a=ABC&a=DEF],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/decode decodeVerifyPayload ok 1`] = `
+Object {
+  "err": undefined,
+  "ok": true,
+  "val": Object {
+    "a": "pqr",
+    "code": "def",
+    "hmac": "abc",
+    "shop": "ghi",
+    "state": "jkl",
+    "timestamp": "mno",
+  },
+}
+`;

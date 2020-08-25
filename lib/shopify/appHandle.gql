@@ -1,0 +1,5 @@
+query appHandle {
+  app {
+    handle
+  }
+}

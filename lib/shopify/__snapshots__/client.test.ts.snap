@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/shopify/client app ifram url ng(json) 1`] = `
+Object {
+  "err": [Error: GraphQL Error (Code: 500): {"response":{"message":"internal server error","status":500},"request":{"query":"query appHandle {\\n  app {\\n    handle\\n  }\\n}\\n"}}],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/client app ifram url ng(text) 1`] = `
+Object {
+  "err": [Error: GraphQL Error (Code: 500): {"response":{"error":"internal server error","status":500},"request":{"query":"query appHandle {\\n  app {\\n    handle\\n  }\\n}\\n"}}],
+  "ok": false,
+  "val": undefined,
+}
+`;
+
+exports[`lib/shopify/client app ifram url ok 1`] = `
+Object {
+  "err": undefined,
+  "ok": true,
+  "val": "https://mytest.myshopify.com/admin/apps/myapp",
+}
+`;
