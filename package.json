@@ -44,7 +44,7 @@
   "devDependencies": {
     "@graphql-codegen/cli": "1.17.7",
     "@graphql-codegen/typescript": "1.17.8",
-    "@graphql-codegen/typescript-graphql-request": "1.17.7",
+    "@graphql-codegen/typescript-graphql-request": "3.2.2",
     "@graphql-codegen/typescript-operations": "1.17.7",
     "@sentry/webpack-plugin": "1.12.0",
     "@testing-library/react": "^10.0.1",
